@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<title>武器ルーレット</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="site_name" content="スプラトゥーン プライベートマッチ専用ツール">
+		<link rel="stylesheet" href="\weapon\css\styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    	
+	<body class="body1">
+
+        <header id="header">
+            <a href="/" class="logo"><strong>スプラトゥーン2 プライベートマッチ専用ツール</strong></a>
+        </header>
+        <section id="banner">
+            <div class="banner-content">
+                <header>
+                    <h1>武器ルーレット</span></h1>
+                    <p>武器ルーレット（ランダム）を行うことが出来ます！<br>ぜひ、お使いください！</p>
+                </header>
+            </div>
+        </section>
+
+		<div id="page-top"><a href="#"></a></div>
+      	<script>
+       		$(function(){
+  			var pagetop = $('#page-top');
+  			pagetop.hide();
+  			$(window).scroll(function () {
+     		if ($(this).scrollTop() > 100) {
+          	pagetop.fadeIn();
+     		} else {
+          	pagetop.fadeOut();
+     		}
+  			});
+  			pagetop.click(function () {
+     		$('body, html').animate({ scrollTop: 0 }, 500);
+     		return false;
+  			});
+			});
+     	</script>
+
+		 <section>
+			<h2>初期設定</h2>
+                <div class="row">
+                    <div class="correct1">参加者</div>
+                    <div class="correct2" id="correct2">
+                        <table id="Table" class="alt">
+                            <tr>
+                                <td>1</td>
+                                <td><input value="アルファ" /></td>
+                                <td>2</td>
+                                <td><input value="アルファ" /></td>
+                                <td>3</td>
+                                <td><input value="アルファ" /></td>
+                                <td>4</td>
+                                <td><input value="アルファ" /></td>
+                                <td>5</td>
+                                <td><input value="ベータ" /></td>
+                                <td>6</td>
+                                <td><input value="ベータ" /></td>
+                                <td>7</td>
+                                <td><input value="ベータ" /></td>
+                                <td>8</td>
+                                <td><input value="ベータ" /></td>
+                            </tr>
+                        </table>
+                    </div>
+
+					<div class="correct3" style="text-align: center;">
+						<button type="button" onclick = "roulette()" class="button" id="roulette-Start" style="background-color:rgb(238, 200, 255);">武器ルーレット ON！（データ更新）</button>
+					</div>
+
+					<div class="correct3 clear">
+						<h2>武器ルーレット 結果</h2>
+						<div class="box">
+							<ul class="jquery-table clear">
+								<li class = "box1">
+									<p id = "box-name1">アルファ</p>
+									<p id="box-weapon1">わかばシューター</p>
+									<p id = "box-name2">アルファ</p>
+									<p id="box-weapon2">わかばシューター</p>
+									<p id = "box-name3">アルファ</p>
+									<p id="box-weapon3">わかばシューター</p>
+									<p id = "box-name4">アルファ</p>
+									<p id="box-weapon4">わかばシューター</p>
+								</li>
+								<li class = "box2">
+									<p id = "box-name5">ベータ</p>
+									<p id="box-weapon5">わかばシューター</p>
+									<p id = "box-name6">ベータ</p>
+									<p id="box-weapon6">わかばシューター</p>
+									<p id = "box-name7">ベータ</p>
+									<p id="box-weapon7">わかばシューター</p>
+									<p id = "box-name8">ベータ</p>
+									<p id="box-weapon8">わかばシューター</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+		 </section>
+
+		<div>
+			<div id="main">
+				<div class="inner">
+					<section>
+						<header class="main-content">
+							<br><br><br>
+							<h2>ツール</h2>
+						</header>
+						<div class="posts">
+							<article>
+								<h3>罰ゲーム</h3>
+								<p>負けたチームの1番キル数が少ない人への罰ゲームをルーレット形式で選ぶことができます！</p>
+								<ul class="action" style="margin: 0 0 20px 0;">
+									<li><a href="\guilty\index.html" class="button">使用する</a></li>
+								</ul>
+							</article>
+						</div>
+					</section>
+					<footer id="footer">
+						<p class="copyright">&copy; Beck All rights reserved.
+					</footer>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="\weapon\js\main.js"></script>
+
+	</body>
+</html>

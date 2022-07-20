@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<title>罰ゲーム</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="site_name" content="スプラトゥーン プライベートマッチ専用ツール">
+		<link rel="stylesheet" href="\guilty\css\styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    	
+	<body class="body1">
+
+        <header id="header">
+            <a href="/" class="logo"><strong>スプラトゥーン2 プライベートマッチ専用ツール</strong></a>
+        </header>
+        <section id="banner">
+            <div class="banner-content">
+                <header>
+                    <h1>罰ゲーム</span></h1>
+                    <p>負けたチームの1番キル数が少ない人への罰ゲームをルーレット形式で選ぶことができます！<br>ぜひ、お使いください！</p>
+                </header>
+            </div>
+        </section>
+
+		<div id="page-top"><a href="#"></a></div>
+      	<script>
+       		$(function(){
+  			var pagetop = $('#page-top');
+  			pagetop.hide();
+  			$(window).scroll(function () {
+     		if ($(this).scrollTop() > 100) {
+          	pagetop.fadeIn();
+     		} else {
+          	pagetop.fadeOut();
+     		}
+  			});
+  			pagetop.click(function () {
+     		$('body, html').animate({ scrollTop: 0 }, 500);
+     		return false;
+		});
+		});
+		</script>
+
+		<div>
+			<div id="roulette">1</div>
+			<br><br><br>
+			<button type="button" class = "batu1" id="start" onclick="start();">スタート</button>
+			<button type="button" class = "batu2" id="stop" onclick="stop();">ストップ</button>
+		</div>
+		<br><br><br>
+
+		 <section>
+			<h2>設定</h2>
+                <div class="row">
+                    <table class="roulette" class="alt">
+                        <tr>
+                        <tr>
+                            <td>0</td><td><input class ="text" value="" /></td>
+                            <td>1</td><td><input class ="text" value="" /></td>
+                            <td>2</td><td><input class ="text" value="" /></td>
+                            <td>3</td><td><input class ="text" value="" /></td>
+                            <td>4</td><td><input class ="text" value="" /></td>
+                            <td>5</td><td><input class ="text" value="" /></td>
+                            <td>6</td><td><input class ="text" value="" /></td>
+                            <td>7</td><td><input class ="text" value="" /></td>
+                            <td>8</td><td><input class ="text" value="" /></td>
+                        </tr>
+                    </table>
+                </div>
+		 </section>
+
+		<div>
+			<div id="main">
+				<div class="inner">
+					<section>
+						<header class="main-content">
+							<br><br><br>
+							<h2>ツール</h2>
+						</header>
+						<div class="posts">
+							<article>
+								<h3>武器ルーレット</h3>
+									<p>武器ルーレット（ランダム）を行うことが出来ます！</p>
+									<ul class="action" style="margin: 0 0 20px 0;">
+										<li><a href="\weapon\index.html" class="button">使用する</a></li>
+									</ul>
+							</article>
+						</div>
+					</section>
+					<footer id="footer">
+						<p class="copyright">&copy; Beck All rights reserved.
+					</footer>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<script src="\guilty\js\main.js"></script>></script>
+	</body>
+</html>
